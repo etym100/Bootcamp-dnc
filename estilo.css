@@ -1,0 +1,57 @@
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* esta importando a fonte Inter */
+        
+        body{
+            margin: 0px; /* Margem externa */
+            padding: 0px; /* Margem interna */
+        }
+        
+        /*MENU DE NAVEGAÇÃO PRINCIPAL*/
+        #principal{ /* ira modificar toda a area preincipal */
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            background-color: #303030;
+            display: flex;
+            justify-content: space-between; /* distribui de forma igual tudo para direita */
+            align-items: center;
+            border-bottom: 1px solid #bababa; /* declara a borda em baixo */
+        }
+            #menu{
+                display: flex; 
+                width: 45%;
+                justify-content: space-around; /* distribui de forma igual com espaços em volta dos componentes */
+                align-items: center; /* é alinhamento vertical dos itens do menu. Colocando center, joga todos para o centro */
+
+                margin-left: 5%;
+            }
+
+            #principal div a{ /* ele ira buscar dentro da principal/div/a onde ira so formatar o "a" dentro da div que esta dentro da id principal */
+                font-family: 'Inter';
+                font-size: 25px;
+                font-weight: 600;
+                color: white;
+                text-decoration: none; /* esse comando tira o underline do texto*/
+            }
+
+                #principal div a:hover{ /* o :hover faz com o quando passa em cima com o mouse em cima do menu mude para outra cor */
+                    color: #CCCCCC
+                }
+
+            #principal button {
+                margin-right: 5%;
+                background: #0C70F2;
+                border: 0px;
+                height: 40px;
+                width: 80px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;            
+                color: #FFFFFF;
+                box-shadow: 3px 2px 4px hsla(214, 91%, 50%, 0.25); /* box-shadow é a sobra do botao, onde o 3px é a horizontal, 2px é a vertical e o 4px é o blur ( esfumaçado ), logo depois se declara a cor em rgb */
+                /* rgba é definido por red gren blue e o A é o alfa */
+                cursor: pointer; /* aparece o cursor do mouse em cima do botao */
+            }
